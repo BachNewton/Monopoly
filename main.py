@@ -22,8 +22,8 @@ if play_tournament:
         player_ais=ais,
         min_players_per_game=4,
         max_players_per_game=4,
-        number_of_rounds=4,
-        maximum_games=5,
+        number_of_rounds=1,
+        maximum_games=2,
         permutations_or_combinations=Tournament.PERMUTATIONS)
 
     # Sends updates to the C# GUI...
