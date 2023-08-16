@@ -15,7 +15,10 @@ class MessagingServer(object):
         '''
         self.logger = logging.getLogger(__name__)
         self.window = tk.Tk()
-        self.canvas = tk.Canvas(self.window, width=200, height=200)
+        self.window.title('Monopoly')
+        button = tk.Button(self.window, text='Click me', command=lambda: self.logger.warning('Clicked'))
+        button.pack()
+        self.canvas = tk.Canvas(self.window, width=1280, height=720)
         # canvas.create_rectangle(10, 10, 190, 190, fill="red")
         self.canvas.create_text(100, 100, text='Hello World')
         self.canvas.pack()
