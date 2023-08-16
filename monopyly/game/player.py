@@ -83,10 +83,10 @@ class Player(object):
         The functions will be the AI methods.
         '''
         # We call the function and time how long the AI spends processing it...
-        start = time.clock()
+        # start = time.clock()
         result = function(*args)
-        end = time.clock()
-        elapsed_seconds = end - start
+        # end = time.clock()
+        elapsed_seconds = 0  #end - start
 
         # We update the time the AI has remaining for the current game...
         self.state.ai_processing_seconds_remaining -= elapsed_seconds

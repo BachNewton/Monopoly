@@ -244,9 +244,9 @@ class DarkGreenLightAI(PlayerAIBase):
                     number_of_houses = 0
                     if isinstance(temp_property, Street):
                         number_of_houses = temp_property.number_of_houses
-                    Logger.log("[{:25s}][{:12s}][p:${:3}][h:${:3}][h:{:2d}][r:${:4d}]<{}>".format(temp_property.name, temp_property.property_set
-                        , temp_property.price, temp_property.property_set.house_price ,number_of_houses
-                        , self.calculate_property_rent(temp_property, game_state), temp_property.is_mortgaged), log_level)
+                    # Logger.log("[{:25s}][{:12s}][p:${:3}][h:${:3}][h:{:2d}][r:${:4d}]<{}>".format(temp_property.name, temp_property.property_set
+                    #     , temp_property.price, temp_property.property_set.house_price ,number_of_houses
+                    #     , self.calculate_property_rent(temp_property, game_state), temp_property.is_mortgaged), log_level)
                 Logger.dedent()
 
     def update_cash_reserve(self, game_state, current_player):
