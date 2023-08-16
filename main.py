@@ -23,11 +23,11 @@ if play_tournament:
         min_players_per_game=4,
         max_players_per_game=4,
         number_of_rounds=4,
-        maximum_games=10,
+        maximum_games=5,
         permutations_or_combinations=Tournament.PERMUTATIONS)
 
     # Sends updates to the C# GUI...
-    #tournament.messaging_server = MessagingServer(update_every_n_turns=10, sleep_between_turns_seconds=0.0)
+    tournament.messaging_server = MessagingServer(update_every_n_turns=10, sleep_between_turns_seconds=0.0)
 
     # We play the tournament...
     tournament.play()
